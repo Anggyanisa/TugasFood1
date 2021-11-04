@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:orientation="vertical"
+    tools:context=".pesan">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="FORM PEMESANAN"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Menu"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jumlah"
+                android:textStyle="bold"
+                android:layout_marginLeft="50dp"
+                android:textSize="20dp"/>
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <CheckBox
+                android:id="@+id/ayam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ayam Geprek " />
+            <EditText
+                android:id="@+id/jmlayam"
+                android:layout_marginLeft="10dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/bg_text"
+                android:focusable="true"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:padding="8dp" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <CheckBox
+                android:id="@+id/naspec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nasi Pecel " />
+            <EditText
+                android:id="@+id/jmlnaspec"
+                android:layout_marginLeft="25dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/bg_text"
+                android:focusable="true"
+                android:gravity="top"
+                android:inputType="number"
+                android:padding="8dp" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <CheckBox
+                android:id="@+id/nasgor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nasi Goreng " />
+            <EditText
+                android:id="@+id/jmlnasgor"
+                android:layout_marginLeft="20dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/bg_text"
+                android:focusable="true"
+                android:gravity="top"
+                android:inputType="number"
+                android:padding="8dp" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <CheckBox
+                android:id="@+id/teh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Es teh " />
+            <EditText
+                android:id="@+id/jmlteh"
+                android:layout_marginLeft="57dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/bg_text"
+                android:focusable="true"
+                android:gravity="top"
+                android:inputType="number"
+                android:padding="8dp" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <CheckBox
+                android:id="@+id/jeruk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Es Jeruk" />
+            <EditText
+                android:id="@+id/jmljeruk"
+                android:layout_marginLeft="47dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/bg_text"
+                android:focusable="true"
+                android:gravity="top"
+                android:inputType="number"
+                android:padding="8dp" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <CheckBox
+                android:id="@+id/kopi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Es Kopi" />
+            <EditText
+                android:id="@+id/jmlkopi"
+                android:layout_marginLeft="52dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/bg_text"
+                android:focusable="true"
+                android:gravity="top"
+                android:inputType="number"
+                android:padding="8dp" />
+
+        </TableRow>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/pesan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pesan Sekarang" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Makanan Yang Dipesan"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/pilihan_satu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pilihan 1: "
+        android:textColor="#000000"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/pilihan_dua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Pilihan 2:  "
+        android:textColor="#000000"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/pilihan_tiga"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Pilihan 3: "
+        android:textColor="#000000"
+        android:textSize="14sp" />
+    <TextView
+        android:id="@+id/pilihan_empat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Pilihan 4: "
+        android:textColor="#000000"
+        android:textSize="14sp" />
+    <TextView
+        android:id="@+id/pilihan_lima"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Pilihan 5: "
+        android:textColor="#000000"
+        android:textSize="14sp" />
+    <TextView
+        android:id="@+id/pilihan_enam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Pilihan 6: "
+        android:textColor="#000000"
+        android:textSize="14sp" />
+
+
+    <TableRow android:layout_marginTop="5dp"
+        android:background="@color/purple_200">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/work_sans_semibold"
+            android:text="Total Harga Pesanan"
+            android:textColor="#0C0C0C" />
+
+        <TextView
+            android:id="@+id/txtHargatot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/work_sans"
+            android:text="021000" />
+    </TableRow>
+
+
+
+</LinearLayout>
