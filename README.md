@@ -1,6 +1,11 @@
 # TugasFood1
 Tugas 1 Pemesanan Makanan Matkul Pemograman Mobile oleh Anggyanisa Mutia Nim 19.01.55.0009
-
+<br>
+h1> (DATA DIRI) <h1>
+<br>
+Nama  : Anggyanisa Mutia
+Nim   : 19.01.55.0009/A2
+Matkul  : Pemograman Mobile
 
 <h1> (LINK APLIKASI) <h1>
 <br>
