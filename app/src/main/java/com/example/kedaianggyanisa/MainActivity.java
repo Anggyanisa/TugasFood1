@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 // Perintah Intent Explicit pindah halaman ke activity_detail
-                startActivity(new Intent(MainActivity.this, pesan.class));
+                startActivity(new Intent(MainActivity.this, Pesan.class));
             }
         });
     }

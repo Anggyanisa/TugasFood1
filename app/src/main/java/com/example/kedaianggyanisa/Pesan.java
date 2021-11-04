@@ -10,14 +10,14 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class pesan extends AppCompatActivity {
+public class Pesan extends AppCompatActivity {
     private CheckBox ayam, naspec, nasgor,teh,jeruk,kopi;
     private EditText jmlayam,jmlnaspec,jmlnasgor,jmlteh,jmljeruk,jmlkopi;
     private String menu1, menu2, menu3,menu4,menu5,menu6;
     private int hayam,hnaspec,hnasgor,hteh,hjeruk,hkopi;
     private Button pesan;
     private TextView pilihan1, pilihan2, pilihan3,pilihan4,pilihan5,pilihan6,txthargatot;
-    private double hargatot;
+    private int hargatot;
 
 
     @Override
@@ -54,54 +54,60 @@ public class pesan extends AppCompatActivity {
 
                 if (ayam.isChecked()) {
                     int finalayam = Integer.parseInt(jmlayam.getText().toString());
-                    menu1 = "Ayam Geprek " + jmlayam;
+                    menu1 = "Ayam Geprek " + finalayam;
                     hayam = finalayam * 20000;
 
                 } else if (!ayam.isChecked()) {
                     menu1 = " ";
                     hayam = 0;
+                    pilihan1.setVisibility(View.GONE);
                 }
 
                 if (naspec.isChecked()) {
                     int finalnaspec = Integer.parseInt(jmlnaspec.getText().toString());
-                    menu2 = "Nasi Pecel " + jmlnaspec;
+                    menu2 = "Nasi Pecel " + finalnaspec;
                     hnaspec = finalnaspec * 10000;
                 } else if (naspec.isChecked()) {
                     menu2 = " ";
                     hnaspec = 0;
+                    pilihan2.setVisibility(View.GONE);
                 }
                 if (nasgor.isChecked()) {
                     int finalnasgor = Integer.parseInt(jmlnasgor.getText().toString());
-                    menu3 = "Ayam Goreng " + jmlnasgor;
+                    menu3 = "Ayam Goreng " + finalnasgor;
                     hnasgor = finalnasgor * 15000;
                 } else if (!nasgor.isChecked()) {
                     menu3 = " ";
                     hnasgor = 0;
+                    pilihan3.setVisibility(View.GONE);
                 }
                 if (teh.isChecked()) {
                     int finalteh = Integer.parseInt(jmlteh.getText().toString());
-                    menu4 = "Es Teh " + jmlteh;
+                    menu4 = "Es Teh " + finalteh;
                     hteh = finalteh * 5000;
                 } else if (!teh.isChecked()) {
                     menu4 = " ";
                     hteh = 0;
+                    pilihan4.setVisibility(View.GONE);
                 }
                 if (jeruk.isChecked()) {
                     int finaljeruk = Integer.parseInt(jmljeruk.getText().toString());
-                    menu5 = "Es Jeruk " + jmljeruk;
+                    menu5 = "Es Jeruk " + finaljeruk;
                     hjeruk = finaljeruk * 6000;
                 } else if (!jeruk.isChecked()) {
                     menu5 = " ";
                     hjeruk = 0;
+                    pilihan5.setVisibility(View.GONE);
 
                 }
                 if (kopi.isChecked()) {
                     int finalkopi = Integer.parseInt(jmlkopi.getText().toString());
-                    menu6 = "Es Kopi " + jmlkopi;
+                    menu6 = "Es Kopi " + finalkopi;
                     hkopi = finalkopi * 6000;
                 } else if (!kopi.isChecked()) {
                     menu6 = " ";
                     hkopi = 0;
+                    pilihan6.setVisibility(View.GONE);
                 }
 
                 if(!ayam.isChecked() && !naspec.isChecked() && !nasgor.isChecked() && !teh.isChecked()

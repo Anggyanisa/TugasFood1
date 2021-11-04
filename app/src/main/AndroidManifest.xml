@@ -9,8 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.KedaiAnggyanisa">
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
         <activity
-            android:name=".pesan"
+            android:name=".Pesan"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

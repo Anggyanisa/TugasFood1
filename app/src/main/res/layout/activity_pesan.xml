@@ -3,10 +3,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="8dp"
     android:orientation="vertical"
-    tools:context=".pesan">
+    tools:context=".Pesan">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
@@ -33,14 +39,14 @@
                 android:text="Menu"
                 android:textStyle="bold"
                 android:layout_marginLeft="10dp"
-                android:textSize="20dp"/>
+                android:textSize="20sp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Jumlah"
                 android:textStyle="bold"
                 android:layout_marginLeft="50dp"
-                android:textSize="20dp"/>
+                android:textSize="20sp"/>
 
 
         </TableRow>
@@ -54,17 +60,18 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Ayam Geprek " />
+
             <EditText
                 android:id="@+id/jmlayam"
-                android:layout_marginLeft="10dp"
                 android:layout_width="35dp"
                 android:layout_height="35dp"
+                android:layout_marginLeft="10dp"
                 android:layout_marginTop="4dp"
-                android:background="@drawable/bg_text"
                 android:focusable="true"
                 android:gravity="top"
-                android:inputType="textMultiLine"
-                android:padding="8dp" />
+                android:inputType="number"
+                android:padding="8dp"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
         </TableRow>
         <TableRow
@@ -76,17 +83,18 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Nasi Pecel " />
+
             <EditText
                 android:id="@+id/jmlnaspec"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
                 android:layout_marginLeft="25dp"
-                android:layout_width="35dp"
-                android:layout_height="35dp"
                 android:layout_marginTop="4dp"
-                android:background="@drawable/bg_text"
                 android:focusable="true"
                 android:gravity="top"
                 android:inputType="number"
-                android:padding="8dp" />
+                android:padding="8dp"
+                tools:ignore="SpeakableTextPresentCheck" />
 
         </TableRow>
         <TableRow
@@ -98,17 +106,18 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Nasi Goreng " />
+
             <EditText
                 android:id="@+id/jmlnasgor"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
                 android:layout_marginLeft="20dp"
-                android:layout_width="35dp"
-                android:layout_height="35dp"
                 android:layout_marginTop="4dp"
-                android:background="@drawable/bg_text"
                 android:focusable="true"
                 android:gravity="top"
                 android:inputType="number"
-                android:padding="8dp" />
+                android:padding="8dp"
+                tools:ignore="SpeakableTextPresentCheck" />
 
         </TableRow>
         <TableRow
@@ -120,17 +129,18 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Es teh " />
+
             <EditText
                 android:id="@+id/jmlteh"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
                 android:layout_marginLeft="57dp"
-                android:layout_width="35dp"
-                android:layout_height="35dp"
                 android:layout_marginTop="4dp"
-                android:background="@drawable/bg_text"
                 android:focusable="true"
                 android:gravity="top"
                 android:inputType="number"
-                android:padding="8dp" />
+                android:padding="8dp"
+                tools:ignore="SpeakableTextPresentCheck" />
 
         </TableRow>
         <TableRow
@@ -142,17 +152,18 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Es Jeruk" />
+
             <EditText
                 android:id="@+id/jmljeruk"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
                 android:layout_marginLeft="47dp"
-                android:layout_width="35dp"
-                android:layout_height="35dp"
                 android:layout_marginTop="4dp"
-                android:background="@drawable/bg_text"
                 android:focusable="true"
                 android:gravity="top"
                 android:inputType="number"
-                android:padding="8dp" />
+                android:padding="8dp"
+                tools:ignore="SpeakableTextPresentCheck" />
 
         </TableRow>
         <TableRow
@@ -164,17 +175,18 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Es Kopi" />
+
             <EditText
                 android:id="@+id/jmlkopi"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
                 android:layout_marginLeft="52dp"
-                android:layout_width="35dp"
-                android:layout_height="35dp"
                 android:layout_marginTop="4dp"
-                android:background="@drawable/bg_text"
                 android:focusable="true"
                 android:gravity="top"
                 android:inputType="number"
-                android:padding="8dp" />
+                android:padding="8dp"
+                tools:ignore="SpeakableTextPresentCheck" />
 
         </TableRow>
 
@@ -247,26 +259,40 @@
         android:textSize="14sp" />
 
 
-    <TableRow android:layout_marginTop="5dp"
-        android:background="@color/purple_200">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow android:layout_marginTop="5dp"
+            android:background="@color/purple_200"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/work_sans_semibold"
-            android:text="Total Harga Pesanan"
-            android:textColor="#0C0C0C" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/work_sans_semibold"
+                android:text="Total Harga Pesanan = Rp."
+                android:textSize="30sp"
+                android:textColor="#0C0C0C" />
 
-        <TextView
-            android:id="@+id/txtHargatot"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
-            android:layout_weight="1"
-            android:fontFamily="@font/work_sans"
-            android:text="021000" />
-    </TableRow>
+            <TextView
+                android:id="@+id/txtHargatot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/work_sans"
+                android:text="021000" />
+        </TableRow>
 
+    </LinearLayout>
+        </LinearLayout>
+
+
+
+    </ScrollView>
 
 
 </LinearLayout>
